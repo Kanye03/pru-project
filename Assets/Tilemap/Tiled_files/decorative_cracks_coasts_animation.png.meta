@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 89cf97aaffc82f84ab6116afa17835c2
+guid: 613c68cd72d1e3e4ebdf713a9ef271d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 592320145262061011
-    second: spr_Blue_slime_hurt_shadowless_0
+      213: -5136837967311634597
+    second: decorative_cracks_coasts_animation_0
   - first:
-      213: -8678967581002159052
-    second: spr_Blue_slime_hurt_shadowless_1
+      213: -2334830129808256546
+    second: decorative_cracks_coasts_animation_1
   - first:
-      213: -6183331208376146369
-    second: spr_Blue_slime_hurt_shadowless_2
+      213: 3876940289565872589
+    second: decorative_cracks_coasts_animation_2
   - first:
-      213: -1744014839622924780
-    second: spr_Blue_slime_hurt_shadowless_3
+      213: 4179518228861786263
+    second: decorative_cracks_coasts_animation_3
+  - first:
+      213: 7810828484873198829
+    second: decorative_cracks_coasts_animation_4
+  - first:
+      213: 1407625131206465026
+    second: decorative_cracks_coasts_animation_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_0
+      name: decorative_cracks_coasts_animation_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 24
-        width: 19
-        height: 15
+        x: 15
+        y: 271
+        width: 130
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d527aba808583800800000000000000
-      internalID: 592320145262061011
+      spriteID: b5f76a9b51946b8b0800000000000000
+      internalID: -5136837967311634597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_1
+      name: decorative_cracks_coasts_animation_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 25
-        width: 17
-        height: 13
+        x: 159
+        y: 271
+        width: 130
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43c2c3dd7fc1e8780800000000000000
-      internalID: -8678967581002159052
+      spriteID: ed156ed0e54099fd0800000000000000
+      internalID: -2334830129808256546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_2
+      name: decorative_cracks_coasts_animation_2
       rect:
         serializedVersion: 2
-        x: 154
-        y: 25
-        width: 13
-        height: 15
+        x: 15
+        y: 143
+        width: 130
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f362724d605603aa0800000000000000
-      internalID: -6183331208376146369
+      spriteID: dc159f607a8adc530800000000000000
+      internalID: 3876940289565872589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_3
+      name: decorative_cracks_coasts_animation_3
       rect:
         serializedVersion: 2
-        x: 217
-        y: 25
-        width: 15
-        height: 14
+        x: 159
+        y: 143
+        width: 130
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41604495eb30cc7e0800000000000000
-      internalID: -1744014839622924780
+      spriteID: 79893936fa1a00a30800000000000000
+      internalID: 4179518228861786263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative_cracks_coasts_animation_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec9e5a9f13a56c60800000000000000
+      internalID: 7810828484873198829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative_cracks_coasts_animation_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 15
+        width: 130
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20659725993e88310800000000000000
+      internalID: 1407625131206465026
       vertices: []
       indices: 
       edges: []
@@ -222,11 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      spr_Blue_slime_hurt_shadowless_0: 592320145262061011
-      spr_Blue_slime_hurt_shadowless_1: -8678967581002159052
-      spr_Blue_slime_hurt_shadowless_2: -6183331208376146369
-      spr_Blue_slime_hurt_shadowless_3: -1744014839622924780
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

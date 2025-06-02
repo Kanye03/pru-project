@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 89cf97aaffc82f84ab6116afa17835c2
+guid: 4269874a3e28aec4eaed95745f0da198
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 592320145262061011
-    second: spr_Blue_slime_hurt_shadowless_0
+      213: -7269668576496765691
+    second: decorative_cracks_walls_0
   - first:
-      213: -8678967581002159052
-    second: spr_Blue_slime_hurt_shadowless_1
+      213: -6799852962439934899
+    second: decorative_cracks_walls_1
   - first:
-      213: -6183331208376146369
-    second: spr_Blue_slime_hurt_shadowless_2
+      213: -4454747756833537264
+    second: decorative_cracks_walls_2
   - first:
-      213: -1744014839622924780
-    second: spr_Blue_slime_hurt_shadowless_3
+      213: 3078729324998488032
+    second: decorative_cracks_walls_3
+  - first:
+      213: -2393479837115753245
+    second: decorative_cracks_walls_4
+  - first:
+      213: -5166554519593993859
+    second: decorative_cracks_walls_5
+  - first:
+      213: -1420034055698121715
+    second: decorative_cracks_walls_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +114,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_0
+      name: decorative_cracks_walls_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 24
-        width: 19
-        height: 15
+        x: 0
+        y: 335
+        width: 128
+        height: 177
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d527aba808583800800000000000000
-      internalID: 592320145262061011
+      spriteID: 505371f22f2fc1b90800000000000000
+      internalID: -7269668576496765691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_1
+      name: decorative_cracks_walls_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 25
-        width: 17
-        height: 13
+        x: 1
+        y: 287
+        width: 31
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43c2c3dd7fc1e8780800000000000000
-      internalID: -8678967581002159052
+      spriteID: d4c41e002c112a1a0800000000000000
+      internalID: -6799852962439934899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_2
+      name: decorative_cracks_walls_2
       rect:
         serializedVersion: 2
-        x: 154
-        y: 25
-        width: 13
-        height: 15
+        x: 33
+        y: 287
+        width: 31
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +177,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f362724d605603aa0800000000000000
-      internalID: -6183331208376146369
+      spriteID: 01308f5748e8d22c0800000000000000
+      internalID: -4454747756833537264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_hurt_shadowless_3
+      name: decorative_cracks_walls_3
       rect:
         serializedVersion: 2
-        x: 217
-        y: 25
+        x: 73
+        y: 292
+        width: 8
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efec106208d9ba20800000000000000
+      internalID: 3078729324998488032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative_cracks_walls_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 292
         width: 15
-        height: 14
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +221,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41604495eb30cc7e0800000000000000
-      internalID: -1744014839622924780
+      spriteID: 3ecd7a3f4c6a8ced0800000000000000
+      internalID: -2393479837115753245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative_cracks_walls_5
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 292
+        width: 9
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7939eab906bc48b0800000000000000
+      internalID: -5166554519593993859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decorative_cracks_walls_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cf72dcc860b4ce0800000000000000
+      internalID: -1420034055698121715
       vertices: []
       indices: 
       edges: []
@@ -222,11 +284,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      spr_Blue_slime_hurt_shadowless_0: 592320145262061011
-      spr_Blue_slime_hurt_shadowless_1: -8678967581002159052
-      spr_Blue_slime_hurt_shadowless_2: -6183331208376146369
-      spr_Blue_slime_hurt_shadowless_3: -1744014839622924780
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,67 +1,79 @@
 fileFormatVersion: 2
-guid: 714354ae4e0d850489a0b7345dc7b64c
+guid: aaae6fbc3b9b2424295de6db7459f9e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3529484664382159344
-    second: spr_Blue_slime_attack_0
+      213: 8314308955538630803
+    second: fire_animation_0
   - first:
-      213: -5048223591721065087
-    second: spr_Blue_slime_attack_1
+      213: 996638998543384504
+    second: fire_animation_1
   - first:
-      213: -1043635249693406699
-    second: spr_Blue_slime_attack_2
+      213: 2056924120469444468
+    second: fire_animation_2
   - first:
-      213: -4555020414000634115
-    second: spr_Blue_slime_attack_3
+      213: -3499930701754477147
+    second: fire_animation_3
   - first:
-      213: -983264889815780976
-    second: spr_Blue_slime_attack_4
+      213: 8466061075529824551
+    second: fire_animation_4
   - first:
-      213: -5958352419123694897
-    second: spr_Blue_slime_attack_5
+      213: 689483009432355683
+    second: fire_animation_5
   - first:
-      213: 6688923432856907823
-    second: spr_Blue_slime_attack_6
+      213: 4835652218909538985
+    second: fire_animation_6
   - first:
-      213: -4382022280550477322
-    second: spr_Blue_slime_attack_7
+      213: -9168444809854589408
+    second: fire_animation_7
   - first:
-      213: -4806514478313635424
-    second: spr_Blue_slime_attack_8
+      213: 8604957586409867057
+    second: fire_animation_8
   - first:
-      213: -5062141689237285490
-    second: spr_Blue_slime_attack_9
+      213: -8662240174929776206
+    second: fire_animation_9
   - first:
-      213: -4263944490190795816
-    second: spr_Blue_slime_attack_10
+      213: -1614799647270248084
+    second: fire_animation_10
   - first:
-      213: 6579427868927421713
-    second: spr_Blue_slime_attack_11
+      213: 6420911726264539435
+    second: fire_animation_11
   - first:
-      213: 5069096781749399945
-    second: spr_Blue_slime_attack_12
+      213: -5911397470096975488
+    second: fire_animation_12
   - first:
-      213: -2525814312224773379
-    second: spr_Blue_slime_attack_13
+      213: 1748691510279232488
+    second: fire_animation_13
   - first:
-      213: 7578051565581373153
-    second: spr_Blue_slime_attack_14
+      213: -6964827394024783032
+    second: fire_animation_14
   - first:
-      213: -1146612378448261916
-    second: spr_Blue_slime_attack_15
+      213: -5315599457511960950
+    second: fire_animation_15
   - first:
-      213: 8587380214516945959
-    second: spr_Blue_slime_attack_16
+      213: -4523623588274359541
+    second: fire_animation_16
   - first:
-      213: 6674575846193274551
-    second: spr_Blue_slime_attack_17
+      213: -5247555247312264489
+    second: fire_animation_17
   - first:
-      213: -5093946391023785690
-    second: spr_Blue_slime_attack_18
+      213: -4576344500660898487
+    second: fire_animation_18
   - first:
-      213: 8637935402190893721
-    second: spr_Blue_slime_attack_19
+      213: 9161695519201939133
+    second: fire_animation_19
+  - first:
+      213: 1955352534120309933
+    second: fire_animation_20
+  - first:
+      213: 3227781158161595601
+    second: fire_animation_21
+  - first:
+      213: 345333244853724302
+    second: fire_animation_22
+  - first:
+      213: 5521429107747167180
+    second: fire_animation_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,30 +165,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_0
+      name: fire_animation_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 22
-        width: 19
-        height: 17
+        x: 4
+        y: 251
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0160053d560c40fc0800000000000000
-      internalID: -3529484664382159344
+      spriteID: 398aab7a1fb526370800000000000000
+      internalID: 8314308955538630803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_1
+      name: fire_animation_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 22
-        width: 19
-        height: 16
+        x: 40
+        y: 250
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18528b4d36b11f9b0800000000000000
-      internalID: -5048223591721065087
+      spriteID: 8bfba7583e5c4dd00800000000000000
+      internalID: 996638998543384504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_2
+      name: fire_animation_2
       rect:
         serializedVersion: 2
-        x: 151
-        y: 22
-        width: 19
-        height: 16
+        x: 86
+        y: 247
+        width: 37
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51ac2f215434481f0800000000000000
-      internalID: -1043635249693406699
+      spriteID: 477938ae699ab8c10800000000000000
+      internalID: 2056924120469444468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_3
+      name: fire_animation_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 22
-        width: 19
-        height: 16
+        x: 132
+        y: 248
+        width: 37
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df6e6d6211159c0c0800000000000000
-      internalID: -4555020414000634115
+      spriteID: 5a5d077f19fbd6fc0800000000000000
+      internalID: -3499930701754477147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_4
+      name: fire_animation_4
       rect:
         serializedVersion: 2
-        x: 279
-        y: 22
-        width: 19
-        height: 16
+        x: 3
+        y: 202
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 091ba62dacdba52f0800000000000000
-      internalID: -983264889815780976
+      spriteID: 72977bd61bd7d7570800000000000000
+      internalID: 8466061075529824551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_5
+      name: fire_animation_5
       rect:
         serializedVersion: 2
-        x: 343
-        y: 22
-        width: 19
-        height: 16
+        x: 42
+        y: 204
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc2fa832b0eaf4da0800000000000000
-      internalID: -5958352419123694897
+      spriteID: 36302efd429819900800000000000000
+      internalID: 689483009432355683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_6
+      name: fire_animation_6
       rect:
         serializedVersion: 2
-        x: 407
-        y: 22
-        width: 19
-        height: 16
+        x: 85
+        y: 199
+        width: 39
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,20 +316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f20f8393c64d3dc50800000000000000
-      internalID: 6688923432856907823
+      spriteID: 9aabe6d9210bb1340800000000000000
+      internalID: 4835652218909538985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_7
+      name: fire_animation_7
       rect:
         serializedVersion: 2
-        x: 471
-        y: 22
-        width: 19
-        height: 14
+        x: 134
+        y: 201
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,20 +338,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f111f9e3fdef23c0800000000000000
-      internalID: -4382022280550477322
+      spriteID: 026e7dd950423c080800000000000000
+      internalID: -9168444809854589408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_8
+      name: fire_animation_8
       rect:
         serializedVersion: 2
-        x: 472
-        y: 36
-        width: 16
-        height: 19
+        x: 5
+        y: 156
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,20 +360,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a108584c84db4db0800000000000000
-      internalID: -4806514478313635424
+      spriteID: 13743457553fa6770800000000000000
+      internalID: 8604957586409867057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_9
+      name: fire_animation_9
       rect:
         serializedVersion: 2
-        x: 535
-        y: 22
-        width: 19
-        height: 14
+        x: 41
+        y: 155
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,20 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e85d05a34f8afb9b0800000000000000
-      internalID: -5062141689237285490
+      spriteID: 2b17136947a89c780800000000000000
+      internalID: -8662240174929776206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_10
+      name: fire_animation_10
       rect:
         serializedVersion: 2
-        x: 536
-        y: 36
-        width: 16
-        height: 20
+        x: 84
+        y: 150
+        width: 41
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,20 +404,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8db8138d31d63d4c0800000000000000
-      internalID: -4263944490190795816
+      spriteID: c61e701c6441799e0800000000000000
+      internalID: -1614799647270248084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_11
+      name: fire_animation_11
       rect:
         serializedVersion: 2
-        x: 599
-        y: 22
-        width: 19
-        height: 14
+        x: 133
+        y: 153
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11d69b899c2de4b50800000000000000
-      internalID: 6579427868927421713
+      spriteID: b2953221239ab1950800000000000000
+      internalID: 6420911726264539435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_12
+      name: fire_animation_12
       rect:
         serializedVersion: 2
-        x: 600
-        y: 36
-        width: 16
-        height: 20
+        x: 4
+        y: 107
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,20 +448,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 981bf307aac095640800000000000000
-      internalID: 5069096781749399945
+      spriteID: 0891ab4225f76fda0800000000000000
+      internalID: -5911397470096975488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_13
+      name: fire_animation_13
       rect:
         serializedVersion: 2
-        x: 663
-        y: 22
-        width: 19
-        height: 14
+        x: 40
+        y: 106
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,20 +470,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dfaae3fe34182fcd0800000000000000
-      internalID: -2525814312224773379
+      spriteID: 8eb5fe3e9a9944810800000000000000
+      internalID: 1748691510279232488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_14
+      name: fire_animation_14
       rect:
         serializedVersion: 2
-        x: 664
-        y: 36
-        width: 16
-        height: 19
+        x: 86
+        y: 103
+        width: 37
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,20 +492,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ee0218afb5aa2960800000000000000
-      internalID: 7578051565581373153
+      spriteID: 8434e39e266f75f90800000000000000
+      internalID: -6964827394024783032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_15
+      name: fire_animation_15
       rect:
         serializedVersion: 2
-        x: 727
-        y: 22
-        width: 19
-        height: 14
+        x: 132
+        y: 104
+        width: 37
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +514,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ec8687ed1a6610f0800000000000000
-      internalID: -1146612378448261916
+      spriteID: a8e8db6e4723b36b0800000000000000
+      internalID: -5315599457511960950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_16
+      name: fire_animation_16
       rect:
         serializedVersion: 2
-        x: 728
-        y: 36
-        width: 16
-        height: 16
+        x: 3
+        y: 58
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7241085aec08c2770800000000000000
-      internalID: 8587380214516945959
+      spriteID: b03345b405cd831c0800000000000000
+      internalID: -4523623588274359541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_17
+      name: fire_animation_17
       rect:
         serializedVersion: 2
-        x: 791
-        y: 22
-        width: 19
-        height: 22
+        x: 42
+        y: 60
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,20 +558,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7be90c26e5bd0ac50800000000000000
-      internalID: 6674575846193274551
+      spriteID: 7d227b82e40fc27b0800000000000000
+      internalID: -5247555247312264489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_18
+      name: fire_animation_18
       rect:
         serializedVersion: 2
-        x: 855
-        y: 22
-        width: 19
-        height: 15
+        x: 85
+        y: 55
+        width: 39
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -581,20 +580,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 629e42a0fbaae49b0800000000000000
-      internalID: -5093946391023785690
+      spriteID: 9457b445cee8d70c0800000000000000
+      internalID: -4576344500660898487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_Blue_slime_attack_19
+      name: fire_animation_19
       rect:
         serializedVersion: 2
-        x: 919
-        y: 22
-        width: 19
-        height: 17
+        x: 134
+        y: 57
+        width: 33
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,8 +602,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 992fb588b7c10e770800000000000000
-      internalID: 8637935402190893721
+      spriteID: dbec152b881e42f70800000000000000
+      internalID: 9161695519201939133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_animation_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4a6e615cec22b10800000000000000
+      internalID: 1955352534120309933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_animation_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 11
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcbbe0acd16bcc20800000000000000
+      internalID: 3227781158161595601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_animation_22
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 6
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84a3aca1cedac400800000000000000
+      internalID: 345333244853724302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_animation_23
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 9
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb95cb058e00ac40800000000000000
+      internalID: 5521429107747167180
       vertices: []
       indices: 
       edges: []
@@ -622,27 +709,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      spr_Blue_slime_attack_0: -3529484664382159344
-      spr_Blue_slime_attack_1: -5048223591721065087
-      spr_Blue_slime_attack_10: -4263944490190795816
-      spr_Blue_slime_attack_11: 6579427868927421713
-      spr_Blue_slime_attack_12: 5069096781749399945
-      spr_Blue_slime_attack_13: -2525814312224773379
-      spr_Blue_slime_attack_14: 7578051565581373153
-      spr_Blue_slime_attack_15: -1146612378448261916
-      spr_Blue_slime_attack_16: 8587380214516945959
-      spr_Blue_slime_attack_17: 6674575846193274551
-      spr_Blue_slime_attack_18: -5093946391023785690
-      spr_Blue_slime_attack_19: 8637935402190893721
-      spr_Blue_slime_attack_2: -1043635249693406699
-      spr_Blue_slime_attack_3: -4555020414000634115
-      spr_Blue_slime_attack_4: -983264889815780976
-      spr_Blue_slime_attack_5: -5958352419123694897
-      spr_Blue_slime_attack_6: 6688923432856907823
-      spr_Blue_slime_attack_7: -4382022280550477322
-      spr_Blue_slime_attack_8: -4806514478313635424
-      spr_Blue_slime_attack_9: -5062141689237285490
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

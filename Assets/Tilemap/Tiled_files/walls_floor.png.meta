@@ -124,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -138,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -162,7 +162,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -190,10 +190,10 @@ TextureImporter:
       name: walls_floor_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 368
-        width: 48
-        height: 80
+        x: 15
+        y: 367
+        width: 50
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: walls_floor_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 368
-        width: 48
-        height: 80
+        x: 79
+        y: 367
+        width: 50
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: walls_floor_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 384
-        width: 112
-        height: 64
+        x: 143
+        y: 383
+        width: 114
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +256,10 @@ TextureImporter:
       name: walls_floor_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 288
-        width: 48
-        height: 64
+        x: 15
+        y: 287
+        width: 50
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +278,10 @@ TextureImporter:
       name: walls_floor_4
       rect:
         serializedVersion: 2
-        x: 80
-        y: 288
-        width: 48
-        height: 64
+        x: 79
+        y: 287
+        width: 50
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +300,10 @@ TextureImporter:
       name: walls_floor_5
       rect:
         serializedVersion: 2
-        x: 144
-        y: 320
-        width: 112
-        height: 48
+        x: 143
+        y: 319
+        width: 114
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +322,10 @@ TextureImporter:
       name: walls_floor_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 239
-        width: 16
-        height: 33
+        x: 15
+        y: 238
+        width: 18
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: walls_floor_7
       rect:
         serializedVersion: 2
-        x: 77
-        y: 240
-        width: 22
-        height: 32
+        x: 76
+        y: 239
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: walls_floor_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 271
-        width: 83
-        height: 33
+        x: 127
+        y: 270
+        width: 85
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,10 +388,10 @@ TextureImporter:
       name: walls_floor_9
       rect:
         serializedVersion: 2
-        x: 237
-        y: 272
-        width: 19
-        height: 32
+        x: 236
+        y: 271
+        width: 21
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,10 +410,10 @@ TextureImporter:
       name: walls_floor_10
       rect:
         serializedVersion: 2
-        x: 48
-        y: 240
-        width: 16
-        height: 21
+        x: 47
+        y: 239
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +432,10 @@ TextureImporter:
       name: walls_floor_11
       rect:
         serializedVersion: 2
-        x: 112
-        y: 224
-        width: 64
-        height: 32
+        x: 111
+        y: 223
+        width: 66
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +454,10 @@ TextureImporter:
       name: walls_floor_12
       rect:
         serializedVersion: 2
-        x: 180
-        y: 215
-        width: 41
-        height: 36
+        x: 179
+        y: 214
+        width: 43
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -476,10 +476,10 @@ TextureImporter:
       name: walls_floor_13
       rect:
         serializedVersion: 2
-        x: 224
-        y: 208
-        width: 32
-        height: 48
+        x: 223
+        y: 207
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -498,10 +498,10 @@ TextureImporter:
       name: walls_floor_14
       rect:
         serializedVersion: 2
-        x: 10
-        y: 90
-        width: 61
-        height: 123
+        x: 9
+        y: 89
+        width: 63
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +520,10 @@ TextureImporter:
       name: walls_floor_15
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
-        width: 15
-        height: 48
+        x: 15
+        y: 175
+        width: 17
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,10 +542,10 @@ TextureImporter:
       name: walls_floor_16
       rect:
         serializedVersion: 2
-        x: 50
-        y: 176
-        width: 14
-        height: 48
+        x: 49
+        y: 175
+        width: 16
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,10 +564,10 @@ TextureImporter:
       name: walls_floor_17
       rect:
         serializedVersion: 2
-        x: 82
-        y: 133
-        width: 29
-        height: 88
+        x: 81
+        y: 132
+        width: 31
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -586,10 +586,10 @@ TextureImporter:
       name: walls_floor_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 208
-        width: 16
-        height: 13
+        x: 127
+        y: 207
+        width: 18
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,10 +608,10 @@ TextureImporter:
       name: walls_floor_19
       rect:
         serializedVersion: 2
-        x: 160
-        y: 144
-        width: 48
-        height: 64
+        x: 159
+        y: 143
+        width: 50
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,10 +630,10 @@ TextureImporter:
       name: walls_floor_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 80
-        width: 32
-        height: 125
+        x: 127
+        y: 79
+        width: 34
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,10 +652,10 @@ TextureImporter:
       name: walls_floor_21
       rect:
         serializedVersion: 2
-        x: 224
-        y: 144
-        width: 32
-        height: 48
+        x: 223
+        y: 143
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -674,10 +674,10 @@ TextureImporter:
       name: walls_floor_22
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 48
+        x: 15
+        y: 79
+        width: 18
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,10 +696,10 @@ TextureImporter:
       name: walls_floor_23
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 48
+        x: 47
+        y: 79
+        width: 18
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -718,10 +718,10 @@ TextureImporter:
       name: walls_floor_24
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
-        width: 32
-        height: 48
+        x: 79
+        y: 79
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,10 +740,10 @@ TextureImporter:
       name: walls_floor_25
       rect:
         serializedVersion: 2
-        x: 176
-        y: 80
-        width: 32
-        height: 48
+        x: 175
+        y: 79
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,10 +762,10 @@ TextureImporter:
       name: walls_floor_26
       rect:
         serializedVersion: 2
-        x: 224
-        y: 80
-        width: 32
-        height: 48
+        x: 223
+        y: 79
+        width: 34
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -784,10 +784,10 @@ TextureImporter:
       name: walls_floor_27
       rect:
         serializedVersion: 2
-        x: 5
-        y: 29
-        width: 21
-        height: 23
+        x: 4
+        y: 28
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +806,10 @@ TextureImporter:
       name: walls_floor_28
       rect:
         serializedVersion: 2
-        x: 37
-        y: 25
-        width: 21
-        height: 23
+        x: 36
+        y: 24
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -828,10 +828,10 @@ TextureImporter:
       name: walls_floor_29
       rect:
         serializedVersion: 2
-        x: 64
-        y: 16
-        width: 192
-        height: 45
+        x: 63
+        y: 15
+        width: 194
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -850,7 +850,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6cd3ea893dc343546b1bebf7cc8dea2e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -859,37 +859,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      walls_floor_0: -5428076373527582109
-      walls_floor_1: 3770924749621270030
-      walls_floor_10: -3887442852145815167
-      walls_floor_11: -6855199698749963278
-      walls_floor_12: -5007160005993094726
-      walls_floor_13: 876015917818516313
-      walls_floor_14: -475268706023317679
-      walls_floor_15: -1318657391028443539
-      walls_floor_16: 8654383238147152307
-      walls_floor_17: -3772576965443385430
-      walls_floor_18: -2781928620196617448
-      walls_floor_19: -295913206731716288
-      walls_floor_2: -7609180175424432265
-      walls_floor_20: 8320421103492601163
-      walls_floor_21: 4968166325597531308
-      walls_floor_22: 6365527135242870749
-      walls_floor_23: 6465066738264750691
-      walls_floor_24: -4577155021675463295
-      walls_floor_25: -7330493321157871369
-      walls_floor_26: 8464737506136212124
-      walls_floor_27: 3067580365619961148
-      walls_floor_28: -1401524771226625517
-      walls_floor_29: 8375758220163108748
-      walls_floor_3: 6512568151609184976
-      walls_floor_4: 4794269290470581240
-      walls_floor_5: -1988073679404226919
-      walls_floor_6: 1749869392539340092
-      walls_floor_7: -7170082584239624480
-      walls_floor_8: 963233060431184777
-      walls_floor_9: -918787365942849845
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

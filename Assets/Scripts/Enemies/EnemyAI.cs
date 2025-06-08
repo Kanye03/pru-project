@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private float roamChangeDirFloat = 2f;
-    [SerializeField] private float attackRange = 5f;
+    [SerializeField] private float attackRange = 0f;
     [SerializeField] private MonoBehaviour enemyType;
     [SerializeField] private float attackCooldown = 2f;
     [SerializeField] private bool stopMovingWhileAttacking = false;
+
     private bool canAttack = true;
 
     private enum State
@@ -23,18 +24,22 @@ public class EnemyAI : MonoBehaviour
     private State state;
     private EnemyPathfinding enemyPathfinding;
 
-    private void Awake() {
+    private void Awake()
+    {
         enemyPathfinding = GetComponent<EnemyPathfinding>();
         state = State.Roaming;
     }
 
-    private void Start() {
+    private void Start()
+    {
         roamPosition = GetRoamingPosition();
     }
+
     private void Update()
     {
         MovementStateControl();
     }
+
     private void MovementStateControl()
     {
         switch (state)
@@ -49,6 +54,7 @@ public class EnemyAI : MonoBehaviour
                 break;
         }
     }
+
     private void Roaming()
     {
         timeRoaming += Time.deltaTime;
@@ -65,6 +71,7 @@ public class EnemyAI : MonoBehaviour
             roamPosition = GetRoamingPosition();
         }
     }
+
     private void Attacking()
     {
         if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) > attackRange)

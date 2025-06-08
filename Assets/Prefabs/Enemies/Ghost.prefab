@@ -106,6 +106,8 @@ GameObject:
   - component: {fileID: 3220611499031211865}
   - component: {fileID: 6515571265644983977}
   - component: {fileID: 3339479771594093661}
+  - component: {fileID: 7798143775714553265}
+  - component: {fileID: 7680223166584177498}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -303,6 +305,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 3760085917461346148, guid: 6b38eb747649cb541abb380e3813f2c7, type: 3}
+  bulletMoveSpeed: 12
+  burstCount: 5
+  projectilesPerBurst: 40
+  angleSpread: 359
+  startingDistance: 0.1
+  timeBetweenBursts: 0.3
+  restTime: 0.5
+  stagger: 0
+  oscillate: 0
 --- !u!114 &3220611499031211865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,3 +356,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: 7e00f3fdae071fa44b7428afbd683e9a, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!210 &7798143775714553265
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068925109175666432}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+--- !u!114 &7680223166584177498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068925109175666432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46dbfd764bd6d204688af5b248131e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 6690775839295609086, guid: 39652f7e00b14ba4bb7d63cde5201906, type: 3}
+  healthGlobe: {fileID: 6690775839295609086, guid: f15136189536aa94698dfbf2f0f9194a, type: 3}
+  staminaGlobe: {fileID: 6690775839295609086, guid: f8987db3e1018ac4ea8e90db3b51e2a9, type: 3}

@@ -125,12 +125,12 @@ TextureImporter:
       name: spr_player_right_hit_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 17
-        width: 17
-        height: 26
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: spr_player_right_hit_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 17
-        width: 17
-        height: 26
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: spr_player_right_hit_2
       rect:
         serializedVersion: 2
-        x: 151
-        y: 17
-        width: 17
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49393654, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: spr_player_right_hit_3
       rect:
         serializedVersion: 2
-        x: 215
-        y: 17
-        width: 17
-        height: 24
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b74dd449618c3dc4bbe3446264a50985
     internalID: 0
     vertices: []
     indices: 

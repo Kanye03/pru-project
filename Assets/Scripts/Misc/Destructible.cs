@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Destructible : MonoBehaviour
@@ -8,6 +10,7 @@ public class Destructible : MonoBehaviour
     {
         if (other.gameObject.GetComponent<DamageSource>() || other.gameObject.GetComponent<Projectile>())
         {
+            GetComponent<PickUpSpawner>().DropItems();
             Instantiate(destroyVFX, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

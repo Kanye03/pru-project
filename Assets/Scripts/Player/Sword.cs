@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Sword : MonoBehaviour, IWeapon
@@ -46,6 +47,7 @@ public class Sword : MonoBehaviour, IWeapon
     {
         weaponCollider.gameObject.SetActive(false);
     }
+
 
     public void SwingUpFlipAnimEvent()
     {

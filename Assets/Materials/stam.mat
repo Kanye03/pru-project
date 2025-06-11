@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Heart
+  m_Name: stam
   m_Shader: {fileID: -6465566751694194690, guid: fb082d23749d41a4d815702a8ea7b736, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,7 +42,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 17.343689, g: 2.0152473, b: 0.6217525, a: 0}
+    - _Color: {r: 28.86038, g: 18.967314, b: 0.9066089, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &7504694364170106111

@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Player;
 using Unity.Cinemachine;
 
-public class CameraController : Singleton<CameraController>
+namespace Managements
 {
-    private CinemachineCamera cinemachineCamera;
-    private void Start()
+    public class CameraController : Singleton<CameraController>
     {
-        SetPlayerCameraFollow ();
-    }
+        private CinemachineCamera cinemachineCamera;
+        private void Start()
+        {
+            SetPlayerCameraFollow ();
+        }
 
-    public void SetPlayerCameraFollow() {
-        cinemachineCamera = FindAnyObjectByType<CinemachineCamera>();
-        cinemachineCamera.Follow = PlayerController.Instance.transform;
+        public void SetPlayerCameraFollow() {
+            cinemachineCamera = FindAnyObjectByType<CinemachineCamera>();
+            cinemachineCamera.Follow = PlayerController.Instance.transform;
+        }
     }
 }

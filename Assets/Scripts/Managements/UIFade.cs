@@ -2,42 +2,45 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIFade : Singleton<UIFade>
+namespace Managements
 {
-    [SerializeField] private Image fadeScreen;
-    [SerializeField] private float fadeSpeed = 1f;
-
-    private IEnumerator fadeRoutine;
-
-    public void FadeToBlack()
+    public class UIFade : Singleton<UIFade>
     {
-        if (fadeRoutine != null)
+        [SerializeField] private Image fadeScreen;
+        [SerializeField] private float fadeSpeed = 1f;
+
+        private IEnumerator fadeRoutine;
+
+        public void FadeToBlack()
         {
-            StopCoroutine(fadeRoutine);
+            if (fadeRoutine != null)
+            {
+                StopCoroutine(fadeRoutine);
+            }
+
+            fadeRoutine = FadeRoutine(1);
+            StartCoroutine(fadeRoutine);
         }
 
-        fadeRoutine = FadeRoutine(1);
-        StartCoroutine(fadeRoutine);
-    }
-
-    public void FadeToClear()
-    {
-        if (fadeRoutine != null)
+        public void FadeToClear()
         {
-            StopCoroutine(fadeRoutine);
+            if (fadeRoutine != null)
+            {
+                StopCoroutine(fadeRoutine);
+            }
+
+            fadeRoutine = FadeRoutine(0);
+            StartCoroutine(fadeRoutine);
         }
 
-        fadeRoutine = FadeRoutine(0);
-        StartCoroutine(fadeRoutine);
-    }
-
-    private IEnumerator FadeRoutine(float targetAlpha)
-    {
-        while (!Mathf.Approximately(fadeScreen.color.a, targetAlpha))
+        private IEnumerator FadeRoutine(float targetAlpha)
         {
-            float alpha = Mathf.MoveTowards(fadeScreen.color.a, targetAlpha, fadeSpeed * Time.deltaTime);
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, alpha);
-            yield return null;
+            while (!Mathf.Approximately(fadeScreen.color.a, targetAlpha))
+            {
+                float alpha = Mathf.MoveTowards(fadeScreen.color.a, targetAlpha, fadeSpeed * Time.deltaTime);
+                fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, alpha);
+                yield return null;
+            }
         }
     }
 }

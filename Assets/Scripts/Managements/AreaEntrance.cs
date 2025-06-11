@@ -1,16 +1,20 @@
+using Player;
 using UnityEngine;
 
-public class AreaEntrance : MonoBehaviour
+namespace Managements
 {
-    [SerializeField] private string transitionName;
-
-    private void Start()
+    public class AreaEntrance : MonoBehaviour
     {
-        if (transitionName == SceneManagement.Instance.SceneTransitionName)
+        [SerializeField] private string transitionName;
+
+        private void Start()
         {
-            PlayerController.Instance.transform.position = this.transform.position;
-            CameraController.Instance.SetPlayerCameraFollow();
-            UIFade.Instance.FadeToClear();
+            if (transitionName == SceneManagement.Instance.SceneTransitionName)
+            {
+                PlayerController.Instance.transform.position = this.transform.position;
+                CameraController.Instance.SetPlayerCameraFollow();
+                UIFade.Instance.FadeToClear();
+            }
         }
     }
 }

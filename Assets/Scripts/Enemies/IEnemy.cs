@@ -1,5 +1,8 @@
-interface IEnemy
+namespace Enemies
 {
-    public void Attack();
+    interface IEnemy
+    {
+        public void Attack();
+    }
 }
 

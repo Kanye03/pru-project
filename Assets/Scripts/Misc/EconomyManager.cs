@@ -1,24 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Managements;
 using TMPro;
+using UnityEngine;
 
-public class EconomyManager : Singleton<EconomyManager>
+namespace Misc
 {
-    private TMP_Text goldText;
-    private int currentGold = 0;
-
-    const string COIN_AMOUNT_TEXT = "Gold Amount Text";
-
-    public void UpdateCurrentGold()
+    public class EconomyManager : Singleton<EconomyManager>
     {
-        currentGold += 1;
+        private TMP_Text goldText;
+        private int currentGold = 0;
 
-        if (goldText == null)
+        const string COIN_AMOUNT_TEXT = "Gold Amount Text";
+
+        public void UpdateCurrentGold()
         {
-            goldText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
-        }
+            currentGold += 1;
 
-        goldText.text = currentGold.ToString("D3");
+            if (goldText == null)
+            {
+                goldText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
+            }
+
+            goldText.text = currentGold.ToString("D3");
+        }
     }
 }

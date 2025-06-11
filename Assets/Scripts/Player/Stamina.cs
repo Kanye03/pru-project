@@ -1,75 +1,78 @@
 using System.Collections;
-using System.Collections.Generic;
+using Managements;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Stamina : Singleton<Stamina>
+namespace Player
 {
-    public int CurrentStamina { get; private set; }
-
-    [SerializeField] private Sprite fullStaminaImage, emptyStaminaImage;
-    [SerializeField] private int timeBetweenStaminaRefresh = 3;
-
-    private Transform staminaContainer;
-    private int startingStamina = 3;
-    private int maxStamina;
-    const string STAMINA_CONTAINER_TEXT = "Stamina Container";
-
-    protected override void Awake()
+    public class Stamina : Singleton<Stamina>
     {
-        base.Awake();
+        public int CurrentStamina { get; private set; }
 
-        maxStamina = startingStamina;
-        CurrentStamina = startingStamina;
-    }
+        [SerializeField] private Sprite fullStaminaImage, emptyStaminaImage;
+        [SerializeField] private int timeBetweenStaminaRefresh = 3;
 
-    private void Start()
-    {
-        staminaContainer = GameObject.Find(STAMINA_CONTAINER_TEXT).transform;
-    }
+        private Transform staminaContainer;
+        private int startingStamina = 3;
+        private int maxStamina;
+        const string STAMINA_CONTAINER_TEXT = "Stamina Container";
 
-    public void UseStamina()
-    {
-        CurrentStamina--;
-        UpdateStaminaImages();
-    }
-
-    public void RefreshStamina()
-    {
-        if (CurrentStamina < maxStamina)
+        protected override void Awake()
         {
-            CurrentStamina++;
+            base.Awake();
+
+            maxStamina = startingStamina;
+            CurrentStamina = startingStamina;
         }
-        UpdateStaminaImages();
-    }
 
-    private IEnumerator RefreshStaminaRoutine()
-    {
-        while (true)
+        private void Start()
         {
-            yield return new WaitForSeconds(timeBetweenStaminaRefresh);
-            RefreshStamina();
+            staminaContainer = GameObject.Find(STAMINA_CONTAINER_TEXT).transform;
         }
-    }
 
-    private void UpdateStaminaImages()
-    {
-        for (int i = 0; i < maxStamina; i++)
+        public void UseStamina()
         {
-            if (i <= CurrentStamina - 1)
+            CurrentStamina--;
+            UpdateStaminaImages();
+        }
+
+        public void RefreshStamina()
+        {
+            if (CurrentStamina < maxStamina)
             {
-                staminaContainer.GetChild(i).GetComponent<Image>().sprite = fullStaminaImage;
+                CurrentStamina++;
             }
-            else
+            UpdateStaminaImages();
+        }
+
+        private IEnumerator RefreshStaminaRoutine()
+        {
+            while (true)
             {
-                staminaContainer.GetChild(i).GetComponent<Image>().sprite = emptyStaminaImage;
+                yield return new WaitForSeconds(timeBetweenStaminaRefresh);
+                RefreshStamina();
             }
         }
 
-        if (CurrentStamina < maxStamina)
+        private void UpdateStaminaImages()
         {
-            StopAllCoroutines();
-            StartCoroutine(RefreshStaminaRoutine());
+            for (int i = 0; i < maxStamina; i++)
+            {
+                if (i <= CurrentStamina - 1)
+                {
+                    staminaContainer.GetChild(i).GetComponent<Image>().sprite = fullStaminaImage;
+                }
+                else
+                {
+                    staminaContainer.GetChild(i).GetComponent<Image>().sprite = emptyStaminaImage;
+                }
+            }
+
+            if (CurrentStamina < maxStamina)
+            {
+                StopAllCoroutines();
+                StartCoroutine(RefreshStaminaRoutine());
+            }
         }
     }
 }

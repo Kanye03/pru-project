@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Misc;
+using Player;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour

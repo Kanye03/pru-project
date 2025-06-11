@@ -1,46 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
+using Misc;
 using UnityEngine;
 
-public class EnemyPathfinding : MonoBehaviour
+namespace Enemies
 {
-    [SerializeField] private float moveSpeed = 2f;
-
-    private Rigidbody2D rb;
-    private Vector2 moveDir;
-    private Knockback knockback;
-    private SpriteRenderer spriteRenderer;
-
-    private void Awake()
+    public class EnemyPathfinding : MonoBehaviour
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        knockback = GetComponent<Knockback>();
-        rb = GetComponent<Rigidbody2D>();
-    }
+        [SerializeField] private float moveSpeed = 2f;
 
-    private void FixedUpdate()
-    {
-        if (knockback.GettingKnockedBack) { return; }
+        private Rigidbody2D rb;
+        private Vector2 moveDir;
+        private Knockback knockback;
+        private SpriteRenderer spriteRenderer;
 
-        rb.MovePosition(rb.position + moveDir * (moveSpeed * Time.fixedDeltaTime));
-
-        if (moveDir.x < 0)
+        private void Awake()
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            knockback = GetComponent<Knockback>();
+            rb = GetComponent<Rigidbody2D>();
         }
-        else if (moveDir.x > 0)
+
+        private void FixedUpdate()
         {
-            spriteRenderer.flipX = false;
+            if (knockback.GettingKnockedBack) { return; }
+
+            rb.MovePosition(rb.position + moveDir * (moveSpeed * Time.fixedDeltaTime));
+
+            if (moveDir.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (moveDir.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
-    }
 
-    public void MoveTo(Vector2 targetPosition)
-    {
-        moveDir = targetPosition;
-    }
+        public void MoveTo(Vector2 targetPosition)
+        {
+            moveDir = targetPosition;
+        }
 
-    public void StopMoving()
-    {
-        moveDir = Vector3.zero;
+        public void StopMoving()
+        {
+            moveDir = Vector3.zero;
+        }
     }
 }

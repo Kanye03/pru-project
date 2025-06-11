@@ -1,6 +1,7 @@
-using UnityEngine;
-
-public class BaseSingleton : Singleton<BaseSingleton>
+namespace Managements
 {
+    public class BaseSingleton : Singleton<BaseSingleton>
+    {
     
+    }
 }

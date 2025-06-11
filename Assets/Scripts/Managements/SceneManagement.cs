@@ -1,11 +1,12 @@
-using UnityEngine;
-
-public class SceneManagement : Singleton<SceneManagement>
+namespace Managements
 {
-    public string SceneTransitionName { get; private set; }
-
-    public void SetTransitionName(string sceneTransitionName)
+    public class SceneManagement : Singleton<SceneManagement>
     {
-        this.SceneTransitionName = sceneTransitionName;
+        public string SceneTransitionName { get; private set; }
+
+        public void SetTransitionName(string sceneTransitionName)
+        {
+            this.SceneTransitionName = sceneTransitionName;
+        }
     }
 }

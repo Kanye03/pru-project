@@ -1,22 +1,22 @@
-
-using System.Collections;
-using System.Collections.Generic;
+using Managements;
 using Unity.Cinemachine;
-using UnityEngine;
 
-public class ScreenShakeManager : Singleton<ScreenShakeManager>
+namespace Misc
 {
-    private CinemachineImpulseSource source;
-
-    protected override void Awake()
+    public class ScreenShakeManager : Singleton<ScreenShakeManager>
     {
-        base.Awake();
+        private CinemachineImpulseSource source;
 
-        source = GetComponent<CinemachineImpulseSource>();
-    }
+        protected override void Awake()
+        {
+            base.Awake();
 
-    public void ShakeScreen()
-    {
-        source.GenerateImpulse();
+            source = GetComponent<CinemachineImpulseSource>();
+        }
+
+        public void ShakeScreen()
+        {
+            source.GenerateImpulse();
+        }
     }
 }

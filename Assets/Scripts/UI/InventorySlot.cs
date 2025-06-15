@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class InventorySlot : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private WeaponInfo weaponInfo;
-
-    public WeaponInfo GetWeaponInfo()
+    public class InventorySlot : MonoBehaviour
     {
-        return weaponInfo;
+        [SerializeField] private WeaponInfo weaponInfo;
+
+        public WeaponInfo GetWeaponInfo()
+        {
+            return weaponInfo;
+        }
     }
 }

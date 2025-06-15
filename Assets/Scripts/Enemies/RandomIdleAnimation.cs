@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomIdleAnimation : MonoBehaviour
+namespace Enemies
 {
-    private Animator myAnimator;
-
-    private void Awake()
+    public class RandomIdleAnimation : MonoBehaviour
     {
-        myAnimator = GetComponent<Animator>();
-    }
+        private Animator myAnimator;
 
-    private void Start()
-    {
-        if (!myAnimator) { return; }
+        private void Awake()
+        {
+            myAnimator = GetComponent<Animator>();
+        }
 
-        AnimatorStateInfo state = myAnimator.GetCurrentAnimatorStateInfo(0);
-        myAnimator.Play(state.fullPathHash, -1, Random.Range(0f, 1f));
+        private void Start()
+        {
+            if (!myAnimator) { return; }
+
+            AnimatorStateInfo state = myAnimator.GetCurrentAnimatorStateInfo(0);
+            myAnimator.Play(state.fullPathHash, -1, Random.Range(0f, 1f));
+        }
     }
 }

@@ -1,26 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class SlashAnim : MonoBehaviour
+namespace Player
 {
-    private ParticleSystem ps;
-    private void Awake()
+    public class SlashAnim : MonoBehaviour
     {
-        ps = GetComponent<ParticleSystem>();
-    }
-
-    private void Update()
-    {
-        if (ps && !ps.IsAlive())
+        private ParticleSystem ps;
+        private void Awake()
         {
-            DestroySelf();
+            ps = GetComponent<ParticleSystem>();
         }
-    }
 
-    public void DestroySelf()
-    {
-        Destroy(gameObject);
+        private void Update()
+        {
+            if (ps && !ps.IsAlive())
+            {
+                DestroySelf();
+            }
+        }
+
+        public void DestroySelf()
+        {
+            Destroy(gameObject);
+        }
     }
 }

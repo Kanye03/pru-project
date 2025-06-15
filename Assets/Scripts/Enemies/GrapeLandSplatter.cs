@@ -1,31 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
-public class GrapeLandSplatter : MonoBehaviour
+namespace Enemies
 {
-    private SpriteFade spriteFade;
-
-    private void Awake()
+    public class GrapeLandSplatter : MonoBehaviour
     {
-        spriteFade = GetComponent<SpriteFade>();
-    }
+        private SpriteFade spriteFade;
 
-    private void Start()
-    {
-        StartCoroutine(spriteFade.SlowFadeRoutine());
+        private void Awake()
+        {
+            spriteFade = GetComponent<SpriteFade>();
+        }
 
-        Invoke("DisableCollider", 0.2f);
-    }
+        private void Start()
+        {
+            StartCoroutine(spriteFade.SlowFadeRoutine());
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-        playerHealth?.TakeDamage(1, transform);
-    }
+            Invoke("DisableCollider", 0.2f);
+        }
 
-    private void DisableCollider()
-    {
-        GetComponent<CapsuleCollider2D>().enabled = false;
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            playerHealth?.TakeDamage(1, transform);
+        }
+
+        private void DisableCollider()
+        {
+            GetComponent<CapsuleCollider2D>().enabled = false;
+        }
     }
 }

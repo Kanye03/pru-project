@@ -1,30 +1,33 @@
+using Player;
 using UnityEngine;
-using System.Collections;
 
-public class Bow : MonoBehaviour, IWeapon
+namespace UI
 {
-    [SerializeField] private WeaponInfo weaponInfo;
-    [SerializeField] private GameObject arrowPrefab;
-    [SerializeField] private Transform arrowSpawnPoint;
-
-    readonly int FIRE_HASH = Animator.StringToHash("Fire");
-
-    private Animator myAnimator;
-
-    private void Awake()
+    public class Bow : MonoBehaviour, IWeapon
     {
-        myAnimator = GetComponent<Animator>();
-    }
+        [SerializeField] private WeaponInfo weaponInfo;
+        [SerializeField] private GameObject arrowPrefab;
+        [SerializeField] private Transform arrowSpawnPoint;
 
-    public void Attack()
-    {
-        myAnimator.SetTrigger(FIRE_HASH);
-        GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
-        newArrow.GetComponent<Projectile>().UpdateProjectileRange(weaponInfo.weaponRange);
-    }
+        readonly int FIRE_HASH = Animator.StringToHash("Fire");
 
-    public WeaponInfo GetWeaponInfo()
-    {
-        return weaponInfo;
+        private Animator myAnimator;
+
+        private void Awake()
+        {
+            myAnimator = GetComponent<Animator>();
+        }
+
+        public void Attack()
+        {
+            myAnimator.SetTrigger(FIRE_HASH);
+            GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
+            newArrow.GetComponent<Projectile>().UpdateProjectileRange(weaponInfo.weaponRange);
+        }
+
+        public WeaponInfo GetWeaponInfo()
+        {
+            return weaponInfo;
+        }
     }
 }

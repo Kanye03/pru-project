@@ -1,38 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
-public class Grape : MonoBehaviour, IEnemy
+namespace Enemies
 {
-    [SerializeField] private GameObject grapeProjectilePrefab;
-
-    private Animator myAnimator;
-    private SpriteRenderer spriteRenderer;
-
-    readonly int ATTACK_HASH = Animator.StringToHash("Attack");
-
-    private void Awake()
+    public class Grape : MonoBehaviour, IEnemy
     {
-        myAnimator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private GameObject grapeProjectilePrefab;
 
-    public void Attack()
-    {
-        myAnimator.SetTrigger(ATTACK_HASH);
+        private Animator myAnimator;
+        private SpriteRenderer spriteRenderer;
 
-        if (transform.position.x - PlayerController.Instance.transform.position.x < 0)
+        private readonly int ATTACK_HASH = Animator.StringToHash("Attack");
+
+        private void Awake()
         {
-            spriteRenderer.flipX = false;
+            myAnimator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         }
-        else
-        {
-            spriteRenderer.flipX = true;
-        }
-    }
 
-    public void SpawnProjectileAnimEvent()
-    {
-        Instantiate(grapeProjectilePrefab, transform.position, Quaternion.identity);
+        public void Attack()
+        {
+            myAnimator.SetTrigger(ATTACK_HASH);
+
+            if (transform.position.x - PlayerController.Instance.transform.position.x < 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else
+            {
+                spriteRenderer.flipX = true;
+            }
+        }
+
+        public void SpawnProjectileAnimEvent()
+        {
+            Instantiate(grapeProjectilePrefab, transform.position, Quaternion.identity);
+        }
     }
 }

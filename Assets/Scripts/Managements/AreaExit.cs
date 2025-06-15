@@ -1,31 +1,36 @@
 using System.Collections;
+using Player;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class AreaExit : MonoBehaviour
+
+namespace Managements
 {
-    [SerializeField] private string sceneToLoad;
-    [SerializeField] private string sceneTransitionName;
-
-    private float waitToLoadTime = 1f;
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public class AreaExit : MonoBehaviour
     {
-        if (other.gameObject.GetComponent<PlayerController>())
-        {
-            SceneManagement.Instance.SetTransitionName(sceneTransitionName);
-            UIFade.Instance.FadeToBlack();
-            StartCoroutine(LoadSceneRoutine());
-        }
-    }
+        [SerializeField] private string sceneToLoad;
+        [SerializeField] private string sceneTransitionName;
 
-    private IEnumerator LoadSceneRoutine()
-    {
-        while (waitToLoadTime >= 0)
+        private float waitToLoadTime = 1f;
+
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            waitToLoadTime -= Time.deltaTime;
-            yield return null;
+            if (other.gameObject.GetComponent<PlayerController>())
+            {
+                SceneManagement.Instance.SetTransitionName(sceneTransitionName);
+                UIFade.Instance.FadeToBlack();
+                StartCoroutine(LoadSceneRoutine());
+            }
         }
 
-        SceneManager.LoadScene(sceneToLoad);
+        private IEnumerator LoadSceneRoutine()
+        {
+            while (waitToLoadTime >= 0)
+            {
+                waitToLoadTime -= Time.deltaTime;
+                yield return null;
+            }
+
+            SceneManager.LoadScene(sceneToLoad);
+        }
     }
 }

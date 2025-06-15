@@ -1,17 +1,22 @@
+using Enemies;
+using UI;
 using UnityEngine;
 
-public class DamageSource : MonoBehaviour
+namespace Player
 {
-    private int damageAmount;
-
-    private void Start() {
-        MonoBehaviour currenActiveWeapon = ActiveWeapon.Instance.CurrentActiveWeapon;
-        damageAmount = (currenActiveWeapon as IWeapon).GetWeaponInfo().weaponDamage;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
+    public class DamageSource : MonoBehaviour
     {
-        EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-        enemyHealth?.TakeDamage(damageAmount);
+        private int damageAmount;
+
+        private void Start() {
+            MonoBehaviour currenActiveWeapon = ActiveWeapon.Instance.CurrentActiveWeapon;
+            damageAmount = (currenActiveWeapon as IWeapon).GetWeaponInfo().weaponDamage;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+            enemyHealth?.TakeDamage(damageAmount);
+        }
     }
 }

@@ -10005,6 +10005,7 @@ GameObject:
   - component: {fileID: 916941486}
   - component: {fileID: 916941485}
   - component: {fileID: 916941487}
+  - component: {fileID: 916941488}
   m_Layer: 5
   m_Name: DeathScreenPanel
   m_TagString: Untagged
@@ -10086,6 +10087,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playAgainButton: {fileID: 925125738}
   quitButton: {fileID: 480248153}
+--- !u!225 &916941488
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916941483}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &922473509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23572,6 +23585,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1806801787056292661, guid: c329c9cc23f8e2c45a2aa631dfe7177c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2956366074886256985, guid: c329c9cc23f8e2c45a2aa631dfe7177c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -23806,7 +23823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef25bcfcfb3528846bf272b339ccac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Scene2
+  sceneToLoad: Scene1.2
   sceneTransitionName: WEntry
 --- !u!1001 &6150520645695541860
 PrefabInstance:

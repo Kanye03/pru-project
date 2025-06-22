@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 412768108}
   - component: {fileID: 412768109}
   m_Layer: 5
-  m_Name: Volume
+  m_Name: MusicVolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.303
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13265,6 +13265,7 @@ MonoBehaviour:
   SFXSource: {fileID: 902076420}
   backgroud: {fileID: 8300000, guid: 89f935015cc98724a862a586326fdf21, type: 3}
   death: {fileID: 8300000, guid: 1f2ad53bacc245642854dbdc8ea71a9b, type: 3}
+  musicVolumeSlider: {fileID: 412768109}
 --- !u!4 &1661572300
 Transform:
   m_ObjectHideFlags: 0

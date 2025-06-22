@@ -53,6 +53,12 @@ namespace UI
 
         private void ChangeActiveWeapon()
         {
+            // Kiểm tra xem ActiveWeapon.Instance có tồn tại không
+            if (ActiveWeapon.Instance == null)
+            {
+                Debug.LogError("ActiveWeapon.Instance is null! Cannot change weapon.");
+                return;
+            }
 
             if (ActiveWeapon.Instance.CurrentActiveWeapon != null)
             {
@@ -62,15 +68,14 @@ namespace UI
             Transform childTransform = transform.GetChild(activeSlotIndexNum);
             InventorySlot inventorySlot = childTransform.GetComponentInChildren<InventorySlot>();
             WeaponInfo weaponInfo = inventorySlot.GetWeaponInfo();
-            GameObject weaponToSpawn = weaponInfo.weaponPrefab;
-
+            
             if (weaponInfo == null)
             {
                 ActiveWeapon.Instance.WeaponNull();
                 return;
             }
-
-
+            
+            GameObject weaponToSpawn = weaponInfo.weaponPrefab;
             GameObject newWeapon = Instantiate(weaponToSpawn, ActiveWeapon.Instance.transform);
 
             //ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, 0);

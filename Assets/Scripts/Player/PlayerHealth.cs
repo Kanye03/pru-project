@@ -5,6 +5,7 @@ using Misc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UI;
 
 namespace Player
 {
@@ -34,12 +35,55 @@ namespace Player
             knockback = GetComponent<Knockback>();
         }
 
+        private void OnEnable()
+        {
+            // Chỉ reset player khi scene mới load (không phải khi component được enable)
+            // Không reset ở đây để tránh reset khi player đã chết
+        }
+
         private void Start()
         {
+            // Reset player khi bắt đầu game
+            Debug.Log("PlayerHealth: Start - Initializing player");
+            ResetPlayer();
+        }
+
+        public void ResetPlayer()
+        {
+            Debug.Log("PlayerHealth: ResetPlayer() called");
             isDead = false;
             currentHealth = maxHealth;
+            canTakeDamage = true;
+            
+            // Reset animator nếu có
+            Animator animator = GetComponent<Animator>();
+            if (animator != null)
+            {
+                // Reset tất cả triggers
+                animator.ResetTrigger(DEATH_HASH);
+                // Reset về idle state
+                animator.Play("Idle");
+            }
 
             UpdateHealthSlider();
+            Debug.Log("Player reset - Health: " + currentHealth + "/" + maxHealth);
+        }
+
+        // Tìm DeathScreen mỗi khi cần thiết
+        private DeathScreen FindDeathScreen()
+        {
+            DeathScreen foundDeathScreen = FindObjectOfType<DeathScreen>();
+            
+            if (foundDeathScreen != null)
+            {
+                Debug.Log("DeathScreen found in scene!");
+            }
+            else
+            {
+                Debug.LogWarning("DeathScreen NOT found in scene! Make sure to add DeathScreen component to a GameObject.");
+            }
+            
+            return foundDeathScreen;
         }
 
         private void OnCollisionStay2D(Collision2D other)
@@ -77,21 +121,52 @@ namespace Player
 
         private void CheckIfPlayerDeath()
         {
+            Debug.Log($"CheckIfPlayerDeath: currentHealth={currentHealth}, isDead={isDead}");
+            
             if (currentHealth <= 0 && !isDead)
             {
+                Debug.Log("PlayerHealth: Player is dying! Setting isDead = true");
                 isDead = true;
-                Destroy(ActiveWeapon.Instance.gameObject);
+                
+                // Chỉ hủy vũ khí hiện tại, không hủy ActiveWeapon.Instance
+                if (ActiveWeapon.Instance != null && ActiveWeapon.Instance.CurrentActiveWeapon != null)
+                {
+                    Destroy(ActiveWeapon.Instance.CurrentActiveWeapon.gameObject);
+                    ActiveWeapon.Instance.WeaponNull();
+                }
+                
                 currentHealth = 0;
                 GetComponent<Animator>().SetTrigger(DEATH_HASH);
-                StartCoroutine(DeathLoadSceneRoutine());
+                StartCoroutine(DeathRoutine());
+            }
+            else if (currentHealth <= 0 && isDead)
+            {
+                Debug.Log("PlayerHealth: Player is already dead, not starting death routine again");
             }
         }
 
-        private IEnumerator DeathLoadSceneRoutine()
+        private IEnumerator DeathRoutine()
         {
+            Debug.Log("PlayerHealth: DeathRoutine started - Player died! Starting death routine...");
             yield return new WaitForSeconds(2f);
-            Destroy(gameObject);
-            SceneManager.LoadScene(TOWN_TEXT);
+            
+            Debug.Log("PlayerHealth: DeathRoutine - Attempting to show death screen...");
+            
+            // Tìm DeathScreen mỗi khi cần thiết
+            DeathScreen currentDeathScreen = FindDeathScreen();
+            
+            // Hiển thị death screen thay vì load scene ngay lập tức
+            if (currentDeathScreen != null)
+            {
+                Debug.Log("PlayerHealth: DeathRoutine - DeathScreen found! Calling ShowDeathScreen()");
+                currentDeathScreen.ShowDeathScreen();
+            }
+            else
+            {
+                Debug.LogWarning("PlayerHealth: DeathRoutine - DeathScreen is null! Loading scene as fallback.");
+                // Fallback nếu không tìm thấy DeathScreen
+                SceneManager.LoadScene(TOWN_TEXT);
+            }
         }
 
         private IEnumerator DamageRecoveryRoutine()

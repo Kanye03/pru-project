@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef25bcfcfb3528846bf272b339ccac4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Scene21
+  sceneToLoad: Scene3
   sceneTransitionName: WEntry
 --- !u!61 &36609030
 BoxCollider2D:

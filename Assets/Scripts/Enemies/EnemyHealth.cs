@@ -47,6 +47,8 @@ namespace Enemies
                 Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
                 GetComponent<PickUpSpawner>().DropItems();
                 Destroy(gameObject);
+                // ?? G?i Die() ?? tr? enemy trong EnemyManager
+                GetComponent<EnemyAI>().Die();
             }
         }
     }

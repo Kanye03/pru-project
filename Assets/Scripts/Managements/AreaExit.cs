@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using Player;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Managements; // Để dùng EnemyManager
 
 namespace Managements
 {
@@ -16,9 +17,18 @@ namespace Managements
         {
             if (other.gameObject.GetComponent<PlayerController>())
             {
-                SceneManagement.Instance.SetTransitionName(sceneTransitionName);
-                UIFade.Instance.FadeToBlack();
-                StartCoroutine(LoadSceneRoutine());
+                // Kiểm tra nếu đã diệt hết quái
+                if (EnemyManager.Instance != null && EnemyManager.Instance.AllEnemiesDefeated())
+                {
+                    SceneManagement.Instance.SetTransitionName(sceneTransitionName);
+                    UIFade.Instance.FadeToBlack();
+                    StartCoroutine(LoadSceneRoutine());
+                }
+                else
+                {
+                    Debug.Log("Khong The Qua Man: con quai vat con song.");
+                    // Tuỳ chọn: thêm hiệu ứng âm thanh hoặc UI cảnh báo
+                }
             }
         }
 

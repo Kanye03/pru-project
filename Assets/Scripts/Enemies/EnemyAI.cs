@@ -1,6 +1,7 @@
 using System.Collections;
 using Player;
 using UnityEngine;
+using Managements; // ?? dùng EnemyManager
 
 namespace Enemies
 {
@@ -35,6 +36,12 @@ namespace Enemies
         private void Start()
         {
             roamPosition = GetRoamingPosition();
+
+            // ??m s? enemy khi t?o ra
+            if (EnemyManager.Instance != null)
+            {
+                EnemyManager.Instance.EnemySpawned();
+            }
         }
 
         private void Update()
@@ -83,7 +90,6 @@ namespace Enemies
 
             if (attackRange != 0 && canAttack)
             {
-
                 canAttack = false;
                 (enemyType as IEnemy).Attack();
 
@@ -110,6 +116,26 @@ namespace Enemies
         {
             timeRoaming = 0f;
             return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        }
+
+        // G?i hàm này khi enemy b? gi?t (t? Health script ch?ng h?n)
+        public void Die()
+        {
+            if (EnemyManager.Instance != null)
+            {
+                EnemyManager.Instance.EnemyDied();
+            }
+
+            Destroy(gameObject);
+        }
+
+        // D? phòng: n?u object b? h?y, v?n ??m b?o tr? ?úng
+        private void OnDestroy()
+        {
+            if (EnemyManager.Instance != null && EnemyManager.Instance.aliveEnemies > 0)
+            {
+                EnemyManager.Instance.EnemyDied();
+            }
         }
     }
 }

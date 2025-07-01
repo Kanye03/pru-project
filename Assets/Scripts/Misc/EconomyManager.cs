@@ -14,6 +14,12 @@ namespace Misc
         const string COIN_AMOUNT_TEXT = "Gold Amount Text";
         const string HIGH_SCORE_TEXT = "High Score Text";
 
+        protected override void Awake()
+        {
+            base.Awake();
+            DontDestroyOnLoad(this.gameObject);
+        }
+
         private void Start()
         {
             // Load high score từ PlayerPrefs (hoặc mặc định là 0)
@@ -52,5 +58,8 @@ namespace Misc
             currentGold = 0;
             UpdateUI();
         }
+
+        public int CurrentGold => currentGold;
+        public int HighScore => highScore;
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Player;
+using Misc;
 
 namespace Managements
 {
@@ -67,6 +68,7 @@ namespace Managements
         {
             ResetGameState();
             SceneManager.LoadScene("Scene1");
+            EconomyManager.Instance.ResetCurrentGold();
         }
 
         public void QuitToMainMenu()

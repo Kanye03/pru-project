@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Managements;
+using TMPro;
 
 namespace UI
 {
@@ -13,6 +14,8 @@ namespace UI
 
         private GameManager gameManager;
         private CanvasGroup canvasGroup;
+        [SerializeField] private GameObject currentGoldTextObj;
+        [SerializeField] private TMP_Text currentGoldText;
 
         private void Awake()
         {
@@ -55,6 +58,8 @@ namespace UI
             canvasGroup.interactable = false;
             canvasGroup.blocksRaycasts = false;
             Time.timeScale = 1f; 
+            if (currentGoldTextObj != null)
+                currentGoldTextObj.SetActive(false);
             Debug.Log("DeathScreen: Panel hidden via CanvasGroup and time scale reset");
         }
 
@@ -65,6 +70,18 @@ namespace UI
             canvasGroup.interactable = true;
             canvasGroup.blocksRaycasts = true;
             Time.timeScale = 0f;
+            if (currentGoldText != null)
+            {
+                GameObject goldAmountObj = GameObject.Find("Gold Amount Text");
+                if (goldAmountObj != null)
+                {
+                    TMP_Text goldAmountText = goldAmountObj.GetComponent<TMP_Text>();
+                    if (goldAmountText != null)
+                        currentGoldText.text = "GOLD: " + goldAmountText.text;
+                }
+                if (currentGoldTextObj != null)
+                    currentGoldTextObj.SetActive(true);
+            }
             Debug.Log("DeathScreen: Panel shown via CanvasGroup and game paused");
         }
 

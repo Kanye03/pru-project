@@ -48,58 +48,13 @@ namespace Enemies
                 Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
                 GetComponent<PickUpSpawner>().DropItems();
 
-                // Call Die() to remove enemy from EnemyManager
+                // Call Die() to remove enemy from EnemyManager (victory check is now handled there)
                 GetComponent<EnemyAI>().Die();
-
-                // Check if this was the last enemy and trigger victory
-                StartCoroutine(CheckVictoryAfterDeath());
 
                 Destroy(gameObject);
             }
         }
 
-        private IEnumerator CheckVictoryAfterDeath()
-        {
-            // Wait a frame to ensure the enemy count is updated
-            yield return null;
 
-            // Check if all enemies are defeated
-            if (EnemyManager.Instance != null && EnemyManager.Instance.AllEnemiesDefeated())
-            {
-                // Find and trigger victory screen
-                UI.VictoryScreen victoryScreen = FindObjectOfType<UI.VictoryScreen>();
-                if (victoryScreen != null)
-                {
-                    victoryScreen.ShowVictory();
-                }
-                else
-                {
-                    // Fallback: directly show victory object and return to menu
-                    GameObject victoryObject = GameObject.Find("Victory");
-                    if (victoryObject != null)
-                    {
-                        victoryObject.SetActive(true);
-                        Debug.Log("Victory! All enemies defeated. Returning to menu in 3 seconds...");
-                        StartCoroutine(ReturnToMenuAfterDelay());
-                    }
-                }
-            }
-        }
-
-        private IEnumerator ReturnToMenuAfterDelay()
-        {
-            yield return new WaitForSeconds(3f);
-
-            // Return to main menu
-            Managements.GameManager gameManager = FindObjectOfType<Managements.GameManager>();
-            if (gameManager != null)
-            {
-                gameManager.QuitToMainMenu();
-            }
-            else
-            {
-                UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
-            }
-        }
     }
 }

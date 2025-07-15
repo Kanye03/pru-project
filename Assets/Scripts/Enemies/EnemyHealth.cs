@@ -2,6 +2,7 @@ using System.Collections;
 using Misc;
 using Player;
 using UnityEngine;
+using Managements;
 
 namespace Enemies
 {
@@ -46,10 +47,14 @@ namespace Enemies
             {
                 Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
                 GetComponent<PickUpSpawner>().DropItems();
-                Destroy(gameObject);
-                // ?? G?i Die() ?? tr? enemy trong EnemyManager
+
+                // Call Die() to remove enemy from EnemyManager (victory check is now handled there)
                 GetComponent<EnemyAI>().Die();
+
+                Destroy(gameObject);
             }
         }
+
+
     }
 }

@@ -92,10 +92,9 @@ namespace Managements
             }
             else
             {
-                Debug.LogError("EnemyManager: Victory object NOT found! Make sure there's a GameObject named 'Victory' in the scene.");
-                // Still try to return to menu even without victory display
-                Debug.Log("EnemyManager: Returning to menu anyway...");
-                StartCoroutine(ReturnToMenuAfterDelay());
+                Debug.Log("EnemyManager: Victory object NOT found! This means player can continue playing (not a final level).");
+                // Do NOT return to menu if no Victory object is found
+                // This allows the player to continue playing in intermediate levels
             }
         }
 
